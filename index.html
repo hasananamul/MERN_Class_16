@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal box / custom alert</title>
+    <!-- Font awesome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="banner_section">
+          <div class="banner_content">
+            <div class="banner_tittle">
+              <h2>This is class_ 16 for MERN Stack</h2>
+            </div>
+            <div class="banner_sub_title">
+              <h4>I love MERN Stack</h4>
+            </div>
+            <div class="banner_text">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Veniam, voluptas natus praesentium ad quo eaque exercitationem
+                in vero nam vel pariatur iusto nisi itaque adipisci dicta sequi,
+                similique sint doloribus!
+              </p>
+            </div>
+            <div class="banner_button">
+              <button class="edit_btn">Click for edit post</button>
+            </div>
+          </div>
+          <!--banner_content-->
+        </div>
+        <!--banner section-->
+      </div>
+      <!--row-->
+    </div>
+    <!--container-->
+
+    <div class="hasan_modals">
+      <div class="hasan_modal_content">
+        <div class="modals_header">
+          <div class="title">
+            <h2>Edit post</h2>
+            <div class="close_btn"><span>&times;</span></div>
+          </div>
+          <!--title-->
+        </div>
+        <br />
+        <!--modals_header-->
+        <div class="modals_body">
+          <div class="modals_body_top">
+            <div class="modal_body_top_text">
+              <div class="profile_img">
+                <img
+                  src="https://scontent.fsin13-1.fna.fbcdn.net/v/t1.6435-9/105699964_2744923665739681_2716766128330014473_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=bxQ6TBpKAi8AX-hp1Rr&_nc_ht=scontent.fsin13-1.fna&oh=00_AT8Px2Q-np5MQ6Outz6LNNcwwvdyaogCoZIMsj7lOnj2ZQ&oe=621FCCAF"
+                  alt="Hasan_fb_img"
+                />
+              </div>
+              <div class="profile_name">
+                <h3>Hasan Anamul</h3>
+                <div class="post_audiance">
+                  <select name="post" id="post">
+                    <option value="Only me">Only me</option>
+                    <option value="public">Piublic</option>
+                    <option value="Friends">friends</option>
+                  </select>
+                </div>
+                <!--post_audiance-->
+              </div>
+              <!--profile_name-->
+            </div>
+            <!--modal_body_top_text-->
+            <div class="post_input">
+              <input
+                type="text"
+                name="text"
+                id="text"
+                placeholder=" Whaat's on your mind, Hasan?"
+              />
+            </div>
+          </div>
+          <!--modals_body top-->
+          <div class="modal_body_bottom">
+            <div class="post_title">
+              <h2>তাওহীদ ও ইসলাহ</h2>
+            </div>
+            <!--post title-->
+            <div class="post_date">
+              <span> 4 September 2018 </span>
+            </div>
+            <!--post_date-->
+            <div class="modal_post">
+              <p>
+                এগুলো কখনো <span>#ভাইরাল</span> হয় না অবশ্যই ভাইরাল হওয়া খুবই
+                জরুরি ।যে কোরআন তেলাওয়াত শুনে সবাই কাঁদে সেই কোরআন শুনতে যে কত
+                ভাল লাগে তা কাউকে ভাষায় বোঝানো বা প্রকাশ করে বোঝানো যায় না।
+                আল্লাহ সুবহানাতায়ালা আমাদের সবাইকে এই কুরআন বুঝার তৌফিক দান
+                করুক এগুলো কখনো #ভাইরাল হয় না অবশ্যই ভাইরাল হওয়া খুবই জরুরি
+                ।যে কোরআন তেলাওয়াত শুনে সবাই কাঁদে সেই কোরআন শুনতে যে কত ভাল
+                লাগে তা কাউকে ভাষায় বোঝানো বা প্রকাশ করে বোঝানো যায় না। আল্লাহ
+                সুবহানাতায়ালা আমাদের সবাইকে এই কুরআন বুঝার তৌফিক দান করুক।আমিন!
+              </p>
+            </div>
+            <!--modal_post-->
+          </div>
+          <!--modal_body_bottom-->
+        </div>
+        <!--modals_body-->
+
+        <div class="modals_fotter">
+          <div class="fotter_top">
+            <div class="add_post">
+              <input
+                type="text"
+                name="add_post"
+                id="add_post"
+                placeholder="Add your post"
+              />
+              <div class="icon"></div>
+            </div>
+          </div>
+          <!--fotter_top-->
+          <div class="fotter_button">
+            <input type="submit" value="Save" />
+          </div>
+        </div>
+        <!--modal fotter-->
+      </div>
+      <!--hasan modal content-->
+    </div>
+    <!--hasan_modals-->
+
+    <!-- Modal alert section -->
+
+    <div class="hasan_modal_alert">
+      <div class="modal_alert_content">
+        <div class="modal_alert_header">
+          <h2>Unsaved changes</h2>
+          <div class="alert_close_btn"><span> &times; </span></div>
+        </div>
+        <!--modal_alert_header-->
+        <div class="modal_alert_body">
+          <div class="modal_alert_body_content">
+            <p>Changes you've made will not be saved.</p>
+          </div>
+          <!--modal_alert_body_content-->
+          <div class="modal_alert_button">
+            <a class="keep" href="#"> Keep editing</a>
+            <a class="discard" href="#"> Discard</a>
+          </div>
+          <!--modal_alert_button-->
+        </div>
+        <!--modal_alert_body-->
+      </div>
+      <!--modal_alert_content-->
+    </div>
+    <!--hasan_modal_alert-->
+
+    <!-- Accordion section -->
+
+    <div class="accordion_section">
+      <div class="accordion_content">
+        <div class="accordion_headder">
+          <div class="accprdion_title">
+            <h2>Accordion _1</h2>
+            <span><i class="fa fa-chevron-down" aria-hidden="true"></i> </span>
+          </div>
+        </div>
+
+        <div class="accordion_body">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+            dolore provident temporibus, dolores quos dicta praesentium libero
+            perferendis ad ullam distinctio dignissimos ipsam vitae corrupti
+            eligendi alias assumenda, nam natus.
+          </p>
+        </div>
+      </div>
+      <!--accordion content-->
+      <div class="accordion_content">
+        <div class="accordion_headder">
+          <div class="accprdion_title">
+            <h2>Accordion _1</h2>
+            <span><i class="fa fa-chevron-down" aria-hidden="true"></i> </span>
+          </div>
+        </div>
+
+        <div class="accordion_body">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+            dolore provident temporibus, dolores quos dicta praesentium libero
+            perferendis ad ullam distinctio dignissimos ipsam vitae corrupti
+            eligendi alias assumenda, nam natus. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Doloremque, dolore provident
+            temporibus, dolores quos dicta praesentium libero perferendis ad
+            ullam distinctio dignissimos ipsam vitae corrupti eligendi alias
+            assumenda, nam natus. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Doloremque, dolore provident temporibus, dolores
+            quos dicta praesentium libero perferendis ad ullam distinctio
+            dignissimos ipsam vitae corrupti eligendi alias assumenda, nam
+            natus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Doloremque, dolore provident temporibus, dolores quos dicta
+            praesentium libero perferendis ad ullam distinctio dignissimos ipsam
+            vitae corrupti eligendi alias assumenda, nam natus.
+          </p>
+        </div>
+      </div>
+      <!--accordion content-->
+      <div class="accordion_content">
+        <div class="accordion_headder">
+          <div class="accprdion_title">
+            <h2>Accordion _1</h2>
+            <span><i class="fa fa-chevron-down" aria-hidden="true"></i> </span>
+          </div>
+        </div>
+
+        <div class="accordion_body">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+            dolore provident temporibus, dolores quos dicta praesentium libero
+            perferendis ad ullam distinctio dignissimos ipsam vitae corrupti
+            eligendi alias assumenda, nam natus.
+          </p>
+        </div>
+      </div>
+      <!--accordion content-->
+      <div class="accordion_content">
+        <div class="accordion_headder">
+          <div class="accprdion_title">
+            <h2>Accordion _1</h2>
+            <span><i class="fa fa-chevron-down" aria-hidden="true"></i> </span>
+          </div>
+        </div>
+
+        <div class="accordion_body">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+            dolore provident temporibus, dolores quos dicta praesentium libero
+            perferendis ad ullam distinctio dignissimos ipsam vitae corrupti
+            eligendi alias assumenda, nam natus.
+          </p>
+        </div>
+      </div>
+      <!--accordion content-->
+      <div class="accordion_content">
+        <div class="accordion_headder">
+          <div class="accprdion_title">
+            <h2>Accordion _1</h2>
+            <span><i class="fa fa-chevron-down" aria-hidden="true"></i> </span>
+          </div>
+        </div>
+
+        <div class="accordion_body">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+            dolore provident temporibus, dolores quos dicta praesentium libero
+            perferendis ad ullam distinctio dignissimos ipsam vitae corrupti
+            eligendi alias assumenda, nam natus.
+          </p>
+        </div>
+      </div>
+      <!--accordion content-->
+      <div class="accordion_content">
+        <div class="accordion_headder">
+          <div class="accprdion_title">
+            <h2>Accordion _1</h2>
+            <span><i class="fa fa-chevron-down" aria-hidden="true"></i> </span>
+          </div>
+        </div>
+
+        <div class="accordion_body">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+            dolore provident temporibus, dolores quos dicta praesentium libero
+            perferendis ad ullam distinctio dignissimos ipsam vitae corrupti
+            eligendi alias assumenda, nam natus.
+          </p>
+        </div>
+      </div>
+      <!--accordion content-->
+    </div>
+    <!--Accordion section-->
+
+    <script src="apps.js"></script>
+  </body>
+</html>
