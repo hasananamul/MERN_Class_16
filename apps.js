@@ -50,14 +50,39 @@ $(".hasan_modal_alert .modal_alert_button .discard").addEventListener(
  */
 
 let accordion_content = document.querySelectorAll(".accordion_content");
+
 let accordion_headder = document.querySelectorAll(".accordion_headder");
-for (let x = 0; x < accordion_headder.length; x++) {
-  accordion_headder[x].addEventListener("click", function () {
+
+accordion_headder.forEach((item) => {
+  item.addEventListener("click", function () {
     this.classList.toggle("active");
-    if (this.classList.contains("active")) {
-      this.nextElementSibling.classList.add("active");
-    } else {
-      this.nextElementSibling.classList.remove("active");
-    }
+    this.nextElementSibling.classList.toggle("active");
+    accordion_headder.forEach((item) => {
+      if (item !== this) {
+        item.classList.remove("active");
+        item.nextElementSibling.classList.remove("active");
+      }
+    });
   });
-}
+});
+
+// let accordion_content = document.querySelectorAll(".accordion_content");
+
+// let accordion_section = document.querySelector(".accordion_section");
+// let accordion_headder = document.querySelectorAll(".accordion_headder");
+// for (let x = 0; x < accordion_headder.length; x++) {
+//   accordion_headder[x].addEventListener("click", function () {
+//     for (let i = 0; i < accordion_section.children.length; i++) {
+//       accordion_section.children[i].firstElementChild.classList.remove(
+//         "active"
+//       );
+//       accordion_section.children[i].lastElementChild.classList.remove("active");
+//     }
+//     this.classList.toggle("active");
+//     if (this.classList.contains("active")) {
+//       this.nextElementSibling.classList.add("active");
+//     } else {
+//       this.nextElementSibling.classList.remove("active");
+//     }
+//   });
+// }
