@@ -48,41 +48,27 @@ $(".hasan_modal_alert .modal_alert_button .discard").addEventListener(
 /**
  * Accordion section scripting
  */
-
-let accordion_content = document.querySelectorAll(".accordion_content");
-
 let accordion_headder = document.querySelectorAll(".accordion_headder");
-
 accordion_headder.forEach((item) => {
   item.addEventListener("click", function () {
     this.classList.toggle("active");
-    this.nextElementSibling.classList.toggle("active");
+    if (item.classList.contains("active")) {
+      this.nextElementSibling.style.height =
+        this.nextElementSibling.scrollHeight + "px";
+      this.nextElementSibling.style.visibility = "visible";
+      item.nextElementSibling.style.opacity = "1";
+    } else {
+      this.nextElementSibling.style.height = "0px";
+      this.nextElementSibling.style.visibility = "hidden";
+      item.nextElementSibling.style.opacity = "0";
+    }
     accordion_headder.forEach((item) => {
       if (item !== this) {
         item.classList.remove("active");
-        item.nextElementSibling.classList.remove("active");
+        item.nextElementSibling.style.visibility = "hidden";
+        item.nextElementSibling.style.height = "0px";
+        item.nextElementSibling.style.opacity = "0";
       }
     });
   });
 });
-
-// let accordion_content = document.querySelectorAll(".accordion_content");
-
-// let accordion_section = document.querySelector(".accordion_section");
-// let accordion_headder = document.querySelectorAll(".accordion_headder");
-// for (let x = 0; x < accordion_headder.length; x++) {
-//   accordion_headder[x].addEventListener("click", function () {
-//     for (let i = 0; i < accordion_section.children.length; i++) {
-//       accordion_section.children[i].firstElementChild.classList.remove(
-//         "active"
-//       );
-//       accordion_section.children[i].lastElementChild.classList.remove("active");
-//     }
-//     this.classList.toggle("active");
-//     if (this.classList.contains("active")) {
-//       this.nextElementSibling.classList.add("active");
-//     } else {
-//       this.nextElementSibling.classList.remove("active");
-//     }
-//   });
-// }

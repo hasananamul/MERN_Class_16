@@ -298,8 +298,8 @@ button:hover {
   padding: 8px 15px;
   background: linear-gradient(268deg, #ff00d48a, transparent);
   border-radius: 5px;
-  opacity: 0;
   visibility: hidden;
+  opacity: 0;
   height: 0px;
   transition: all 0.3s ease-in-out;
 }
@@ -307,12 +307,12 @@ button:hover {
   color: #000000;
   font-weight: 600;
 }
-.accordion_body.active {
+/* .accordion_body.active {
   opacity: 1;
   visibility: visible;
   height: 200px;
   overflow-y: auto;
-}
+} */
 .accprdion_title span {
   transition: all 0.3s ease-in-out;
   color: #b91919;
